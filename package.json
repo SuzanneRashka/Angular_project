@@ -1,28 +1,29 @@
 {
-  "name": "angular_project",
-  "version": "1.0.0",
-  "description": "This is an angular crud app",
-  "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/SuzanneRashka/Angular_project.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/SuzanneRashka/Angular_project/issues"
-  },
-  "homepage": "https://github.com/SuzanneRashka/Angular_project#readme",
-  "dependencies": {
-    "express": "^4.14.1",
-    "knex": "^0.12.6",
-    "lite-server": "^2.2.2",
-    "method-override": "^2.3.7",
-    "morgan": "^1.8.1",
-    "nodemon": "^1.11.0",
-    "pg": "^6.1.2"
-  }
+    "name": "angular_project",
+    "version": "1.0.0",
+    "description": "This is an angular crud app",
+    "main": "server.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/SuzanneRashka/Angular_project.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/SuzanneRashka/Angular_project/issues"
+    },
+    "homepage": "https://github.com/SuzanneRashka/Angular_project#readme",
+    "dependencies": {
+        "express": "^4.14.1",
+        "knex": "^0.12.6",
+        "lite-server": "^2.2.2",
+        "method-override": "^2.3.7",
+        "morgan": "^1.8.1",
+        "nodemon": "^1.11.0",
+        "pg": "^6.1.2"
+    }
 }
