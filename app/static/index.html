@@ -1,6 +1,19 @@
-<% include partials/header %>
+<!DOCTYPE html>
+<html>
 
-    <h1>landing.ejs page is working</h1>
+<head>
+    <title>Basic Template</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Kube CSS -->
+    <link rel="stylesheet" href="dist/css/kube.css">
+
+</head>
+
+<body class="bg-success col-10 push-center">
+    <h1>Kube is working</h1>
 
     <form method="post" action="" class="form">
 
@@ -31,5 +44,9 @@
         </div>
 
     </form>
+    <!-- Kube JS + jQuery are used for some functionality, but are not required for the basic setup -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="dist/js/kube.js"></script>
+</body>
 
-    <% include partials/footer %>
+</html>
