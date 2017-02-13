@@ -1,0 +1,23 @@
+{
+  "name": "angular_project",
+  "version": "1.0.0",
+  "description": "This is an angular crud app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SuzanneRashka/Angular_project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SuzanneRashka/Angular_project/issues"
+  },
+  "homepage": "https://github.com/SuzanneRashka/Angular_project#readme",
+  "dependencies": {
+    "method-override": "^2.3.7",
+    "morgan": "^1.8.1"
+  }
+}
