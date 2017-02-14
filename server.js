@@ -5,6 +5,7 @@ const logger = require('morgan');
 const bodyParser = require('body-parser');
 const methodOverride = require('method-override');
 var db = require('./knex');
+const port = process.env.PORT || 8000;
 
 //set view engine to ejs
 app.set('view engine', 'ejs');
@@ -12,6 +13,9 @@ app.set('view engine', 'ejs');
 
 app.use(express.static(__dirname + '/app/static'));
 
+app.use(bodyParser.urlencoded({
+    extended: true
+}));
 app.use(bodyParser.json());
 
 app.get('/', (req, res) => {
