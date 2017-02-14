@@ -1,18 +1,18 @@
-exports.up = function(knex) {
-    return knex.schema.createTable('users', function(table) {
-        table.increments('uid').primary();
-        table.string('first')
+exports.up = function (knex) {
+  return knex.schema.createTable('users', (table) => {
+    table.increments('uid').primary();
+    table.string('first')
             .notNullable();
-        table.string('last')
+    table.string('last')
             .notNullable();
-        table.string('email')
+    table.string('email')
             .unique()
             .notNullable();
-        table.string('password')
+    table.string('password')
             .notNullable();
-    });
+  });
 };
 
-exports.down = function(knex) {
-    return knex.schema.dropTable('users');
+exports.down = function (knex) {
+  return knex.schema.dropTable('users');
 };

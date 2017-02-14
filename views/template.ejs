@@ -1,2 +1,34 @@
 <% include partials/header %>
     <% include partials/footer %>
+
+        <%# Just a template form to pull stuff from%>
+            <form method="post" action="" class="form">
+
+                <div class="form-item">
+                    <label>Email</label>
+                    <input type="email" name="email" class="w50">
+                </div>
+
+                <div class="form-item">
+                    <label>Country</label>
+                    <select>
+            <option value="">---</option>
+        </select>
+                </div>
+
+                <div class="form-item color-success">
+                    <label class="checkbox"><input type="checkbox"> Check me</label>
+                    <label class="checkbox"><input type="radio"> Radio me</label>
+                </div>
+
+                <div class="form-item">
+                    <textarea rows="6"></textarea>
+                </div>
+
+                <div class="form-item">
+                    <button>Log in</button>
+                    <button class="button secondary outline">Cancel</button>
+                </div>
+
+            </form>
+            <h3>bye</h3>

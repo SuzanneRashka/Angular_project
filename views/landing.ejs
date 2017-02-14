@@ -1,34 +1,38 @@
 <% include partials/header %>
 
     <h1>landing.ejs page is working</h1>
-    <form method="post" action="" class="form">
 
-        <div class="form-item">
-            <label>Email</label>
-            <input type="email" name="email" class="w50">
-        </div>
+    <div class="row gutters">
+        <fieldset class="col col-6">
+            <legend>Login data</legend>
+            <div class="form-item">
+                <label>Email</label>
+                <input type="email" name="email">
+            </div>
+            <div class="form-item">
+                <label>Password</label>
+                <input type="password" name="password">
+            </div>
+        </fieldset>
 
-        <div class="form-item">
-            <label>Country</label>
-            <select>
-            <option value="">---</option>
-        </select>
-        </div>
-
-        <div class="form-item color-success">
-            <label class="checkbox"><input type="checkbox"> Check me</label>
-            <label class="checkbox"><input type="radio"> Radio me</label>
-        </div>
-
-        <div class="form-item">
-            <textarea rows="6"></textarea>
-        </div>
-
-        <div class="form-item">
-            <button>Log in</button>
-            <button class="button secondary outline">Cancel</button>
-        </div>
-
-    </form>
-    <h3>bye</h3>
+        <fieldset class="col col-6">
+            <legend>Registration</legend>
+            <div class="form-item">
+                <label>First Name</label>
+                <input type="email" name="email">
+            </div>
+            <div class="form-item">
+                <label>Last Name</label>
+                <input type="password" name="password">
+            </div>
+            <div class="form-item">
+                <label>Email</label>
+                <input type="email" name="email">
+            </div>
+            <div class="form-item">
+                <label>Password</label>
+                <input type="password" name="password">
+            </div>
+        </fieldset>
+    </div>
     <% include partials/footer %>
