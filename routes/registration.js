@@ -10,3 +10,5 @@ router.get('registration', (req, res) => {
         password: ''
     });
 });
+
+router.post('/')
