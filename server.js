@@ -8,7 +8,8 @@ var db = require('./knex');
 const port = process.env.PORT || 8000;
 
 //routes
-const registration = require('./routes/registration');
+var registration = require('./routes/registration');
+app.use(registration);
 
 //set view engine to ejs
 app.set('view engine', 'ejs');
@@ -19,8 +20,6 @@ app.use(bodyParser.urlencoded({
     extended: false
 }));
 app.use(bodyParser.json());
-
-//app.use(registration); NOT WORKING, CALLING FOR APP.USE() REQUIRES MIDDLEWARE FUNCTIONS
 
 //render landing
 app.get('/', (req, res) => {
